@@ -1,0 +1,63 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<!-- <view id="imgsection">
+  <view class="imglist">
+    <image class="imgitem" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/home-main.png?sign=a4f6e8c356cdbecf991bfb7ca5e2e560&t=1678147328"></image>
+  </view>
+</view>
+<view class="flex-box">
+    <image class="img-btn" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/29%E6%B1%82%E6%95%91%E4%BA%BA%E5%91%98.png?sign=e39648b6cc62deea718099e449b1f079&t=1678244478"></image>
+    <image class="img-btn" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E7%94%B5%E5%95%86%E6%8F%92%E7%94%BB.png?sign=eadcaa874a59b23556592551d06ae22a&t=1678263686"></image>
+</view>
+<view class="flex-box">
+<button style="width:300rpx" plain="true" type="primary" bindtap="modalTap">紧急求助</button>
+<button style="width:300rpx" plain="true" type="primary" bindtap="gotoShop">商城</button>
+</view>
+<button class="btn" open-type="contact">联系客服</button> -->
+<!--首页-->
+
+<view class="bg">
+  <image class="bg-image" mode="scaleToFill" ></image>
+</view>
+<view class="container">
+  <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/home-main.png?sign=a4f6e8c356cdbecf991bfb7ca5e2e560&t=1678147328" mode="widthFix" class="banner"></image>
+  <view class="btn-group">
+    <button class="btn" bindtap="modalTap">
+      <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/29%E6%B1%82%E6%95%91%E4%BA%BA%E5%91%98.png?sign=e39648b6cc62deea718099e449b1f079&t=1678244478" mode="aspectFit"></image>
+      <text>紧急求助</text>
+    </button>
+    <button class="btn" bindtap="gotoShop">
+      <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E7%94%B5%E5%95%86%E6%8F%92%E7%94%BB.png?sign=eadcaa874a59b23556592551d06ae22a&t=1678263686" mode="gotoShop"></image>
+      <text>商城</text>
+    </button>
+    <button class="btn" bindtap="gotoMatch">
+      <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E8%80%81%E4%BA%BA%20(1).png?sign=def3830b64bc2d6280844f00ad01ab79&t=1679473613" mode="gotoShop"></image>
+      <text>老友桥</text>
+    </button>
+    <button class="btn" bindtap="gotoZhihu">
+      <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E6%9A%82%E6%97%A0%E6%96%B0%E9%97%BB.png?sign=180f3aa4375791b2ae39ae2a54219e72&t=1679490961" mode="gotoShop"></image>
+      <text>知乎日报</text>
+    </button>
+  </view>
+  <view class="knowledge" >
+    <text class="knowledge-title">每日健康：</text>
+    <swiper autoplay="true" interval="5000" duration="500" circular="true">
+      <swiper-item>
+        <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-21%20221927.png?sign=ff6e2384b215ccb2af5132932d6b9b25&t=1679408418" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-21%20222626.png?sign=26544b53e0926fd8fa82cf5a0237c6d1&t=1679408800" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-21%20222535.png?sign=4686bbb21a63ee6e56e9c6666e0b4eb5&t=1679408757" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-21%20222051.png?sign=f5fd172ffb5608f8557664d677843219&t=1679408481" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-03-21%20222201.png?sign=6ee47bf82b48d84abc45400af7e99664&t=1679408538" mode="widthFix"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+<button class="btn-bottom" open-type="contact">联系客服</button>

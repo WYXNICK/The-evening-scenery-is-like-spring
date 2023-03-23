@@ -1,0 +1,40 @@
+<!--pages/content/content.wxml-->
+<view class="bg" style="opacity: {{0.8}}">
+  <image class="bg-image" mode="scaleToFill" ></image>
+</view>
+<!-- <h1 class="title">{{contentData.title}}</h1>
+<view class="author">{{contentData.author}}</view>
+<rich-text class="article" nodes="{{contentData.content}}"></rich-text>
+<image src="{{contentData.image}}" ></image>
+<button class="tapbtn1" plain="true" data-id="{{list.id}}">收藏：{{contentData.favorites}}</button> -->
+<!-- 帖子详情页面 -->
+<view class="post-detail">
+  <!-- 帖子信息 -->
+  <view class="post-header">
+    <text class="post-title">{{contentData.title}}</text>
+    <view class="post-meta">
+      <text class="post-author">{{contentData.author}}</text>
+      <text class="post-time">{{contentData.createTime}}</text>
+      <text class="post-views">{{contentData.views}} 阅读</text>
+      <text class="post-favorites">{{contentData.favorites}} 收藏</text>
+      <text class="post-stars">{{contentData.stars}} 点赞</text>
+    </view>
+  </view>
+  <!-- 帖子内容 -->
+  <rich-text class="post-content" nodes="{{contentData.content}}"></rich-text>
+  <!-- 评论区 -->
+  <view class="comments">
+    <view class="comments-header">评论区</view>
+    <view class="comments-list">
+      <!-- 循环渲染评论列表 -->
+      <!-- <block wx:for="{{comments}}" wx:key="id">
+        <view class="comment-item">
+          <text class="comment-author">{{item.author}}</text>
+          <text class="comment-time">{{item.createTime}}</text>
+          <text class="comment-content">{{item.content}}</text>
+        </view>
+      </block> -->
+    </view>
+  </view>
+</view>
+

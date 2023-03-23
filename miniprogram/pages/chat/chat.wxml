@@ -1,0 +1,20 @@
+<!--pages/chat/page.wxml-->
+<view class="container">
+  <view class="chat-box">
+    <scroll-view scroll-y="true" class="scroll-view">
+      <block wx:for="{{messages}}" wx:key="timestamp">
+        <view class="message" wx:if="{{item.from === me}}">
+          <view class="content me">{{item.content}}</view>
+        </view>
+        <view class="message" wx:if="{{item.from !== me}}">
+          <image src="{{toUser.avatar}}" class="avatar"></image>
+          <view class="content other">{{item.content}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="input-box">
+    <input class="input" placeholder="输入消息" bindinput="inputChange" value="{{message}}"></input>
+    <button class="send-btn" bindtap="sendMessage">发送</button>
+  </view>
+</view>

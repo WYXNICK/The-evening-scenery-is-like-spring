@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/home/shop/shop",
+    "pages/list/list",
+    "pages/partner/partner",
+    "pages/personal/personal",
+    "pages/content/content",
+    "pages/search/search",
+    "pages/addpost/addpost",
+    "pages/partner/room1/room1",
+    "pages/partner/room2/room2",
+    "pages/partner/room3/room3",
+    "pages/partner/room4/room4",
+    "pages/personal/my/my",
+    "pages/home/request/request",
+    "pages/home/request/story/sotry",
+    "pages/home/match/match",
+    "pages/chat/chat"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#6eb4ee",
+    "navigationBarTitleText": "晚景如春",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list-active.png",
+        "text": "信息"
+      },
+      {
+        "pagePath": "pages/partner/partner",
+        "iconPath": "images/partner.png",
+        "selectedIconPath": "images/partner-active.png",
+        "text": "伙伴"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "images/personal.png",
+        "selectedIconPath": "images/personal-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

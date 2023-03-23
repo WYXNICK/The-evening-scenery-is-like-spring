@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  width: 100px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-input {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.radio-label:last-child,
+.checkbox-label:last-child {
+  margin-right: 0;
+}
+
+.submit-button {
+  width: 200px;
+  height: 40px;
+  background-color: #007AFF;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.picker-text {
+  font-size: 16px;
+}

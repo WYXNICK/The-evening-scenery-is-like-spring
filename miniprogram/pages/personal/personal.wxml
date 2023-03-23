@@ -1,0 +1,75 @@
+
+<view class="bg">
+  <image class="bg-image" mode="scaleToFill" ></image>
+</view>
+<view class="container">
+  <view class="userinfo" wx:if="{{hasUserInfo}}">
+    <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      修改头像
+    </button>
+    <input type="nickname" class="nick-name-input" placeholder="请输入昵称" 	bindblur="changeNickName"/>
+  </view>
+  <button bindtap="getUserProfile" wx:else>获取用户信息</button>
+</view>
+<navigator url="./my/my">
+      <view class="item">
+        <view class="text">前往填写个人信息</view>
+      </view>
+    </navigator>
+
+<!-- <view class="bg">
+  <image class="bg-image" mode="scaleToFill"></image>
+</view>
+<view class="container">
+  <view class="userinfo" wx:if="{{hasUserInfo}}">
+    <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      修改头像
+    </button>
+    <input type="nickname" class="nick-name-input" placeholder="请输入昵称" bindblur="changeNickName" />
+    <view class="form-item">
+      <text class="label">年龄：</text>
+      <input type="number" class="input" placeholder="请输入年龄" bindinput="onInputAge" value="{{user.age}}" />
+    </view>
+    <view class="form-item">
+      <text class="label">省份：</text>
+      <picker mode="region" value="{{user.region}}" bindregionchange="onRegionChange">
+        <view class="picker">
+          {{user.region[0]}}/{{user.region[1]}}/{{user.region[2]}}
+        </view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <text class="label">兴趣爱好：</text>
+      <checkbox-group bindchange="onSelectInterest">
+        <block wx:for="{{interests}}" wx:key="{{index}}">
+          <label class="checkbox-label">
+            <checkbox value="{{item}}" checked="{{selectedInterests.includes(item)}}" />{{item}}
+          </label>
+        </block>
+      </checkbox-group>
+
+      <input class="other-input" placeholder="其他" bindinput="onInputOtherInterest" value="{{user.otherInterest}}" />
+    </view>
+    <view class="form-item">
+      <text class="label">健康状况：</text>
+      <checkbox-group bindchange="onSelectHealthCondition">
+        <block wx:for="{{healthConditions}}" wx:key="{{index}}">
+          <label class="checkbox-label">
+            <checkbox value="{{item}}" checked="{{selectedHealthConditions.includes(item)}}" />{{item}}
+          </label>
+        </block>
+      </checkbox-group>
+
+      <input class="other-input" placeholder="其他" bindinput="onInputOtherHealth" value="{{user.otherHealth}}" />
+    </view>
+  </view>
+  <button bindtap="getUserProfile" wx:else>获取用户信息</button>
+</view> -->

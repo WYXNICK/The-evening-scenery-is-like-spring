@@ -1,0 +1,15 @@
+<!--pages/home/match/match.wxml-->
+<view class="container">
+  <view class="button" bindtap="findSimilarUsers">
+    <text>寻找相似的人</text>
+  </view>
+  <scroll-view scroll-y="true" class="user-list">
+    <view wx:for="{{similarUsers}}" wx:key="index">
+      <view class="user-item" data-id="{{item._id}}" bindtap="startChat">
+        <image class="user-avatar" src="{{item.userimg}}" mode="aspectFill"></image>
+        <text class="user-nickname">{{item.nickname}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

@@ -1,0 +1,16 @@
+<!--pages/home/request/request.wxml-->
+<view class="page__bd">
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__bd" wx:for="{{stories}}" wx:for-item="stories" wx:key="*item">
+      <navigator url="/pages/home/request/story/sotry?id={{stories.id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" mode="widthFix" src="{{stories.images[0]}}" style="height:auto">
+          </image>
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{stories.title}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

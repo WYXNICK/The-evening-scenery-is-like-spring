@@ -1,0 +1,31 @@
+<!--pages/home/shop/shop.wxml-->
+<!-- <view class="product-list">
+  <block wx:for="{{products}}" wx:key="id">
+    <view class="product-item">
+      <image src="{{item.image}}" class="product-image" mode="aspectFill"></image>
+      <view class="product-info">
+        <view class="product-title">{{item.title}}</view>
+        <view class="product-desc">{{item.desc}}</view>
+        <view class="product-price">¥ {{item.price}}</view>
+      </view>
+    </view>
+  </block>
+</view> -->
+<view class="container">
+  <view class="search-bar">
+  <input class="search-input" type="text" placeholder="请输入商品名称或关键词" bindconfirm="searchProducts" value="{{keyword}}" />
+  <button class="search-btn" type="primary" bindtap="searchProducts">搜索</button>
+  <button class="search-btn" type="default" bindtap="clearSearch">清空</button>
+</view>
+  <scroll-view class="products" scroll-y="true">
+    <view class="product" wx:for="{{ products }}" wx:key="{{ item._id }}" bindtap="onProductTap" data-id="{{ item._id }}">
+      <image class="product-image" src="{{ item.image }}" mode="aspectFill"></image>
+      <view class="product-info">
+        <view class="product-name">{{ item.title }}</view>
+        <view class="product-desc">{{ item.desc }}</view>
+
+        <view class="product-price">¥{{ item.price }}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

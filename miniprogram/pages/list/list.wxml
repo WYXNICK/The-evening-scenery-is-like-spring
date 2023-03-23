@@ -1,0 +1,29 @@
+<!-- pages/list/list.wxml -->
+<view class="content">
+  <view class="bg">
+    <view class="name">论坛</view>
+    <form  bindsubmit="formSubmit">
+    <view class="search">     
+         <input type="text" name="find" placeholder="帖子名称" form-type="submit"/>
+         <button class='find' form-type="submit" style="width:50px;height:30x">查询</button>     
+         <button class='btn' bindtap="addpost" style="width:80px;height:30x">发帖</button> 
+    </view>
+  </form>  
+  </view>
+  </view>  
+
+<block wx:for="{{listData}}" wx:for-index="idx" wx:for-item="list" wx:key="item">
+  <view class="weui-panel__bd">
+    <navigator url="./../content/content?id={{list._id}}" class="weui-media-box weui-media-box_appmsg">
+      <view class="weui-media-box__hd">
+        <image class="weui-media-box__thumb" src="{{list.image}}" alt>
+        </image>
+      </view>
+      <view class="weui-media-box__bd">
+      <h4 calss="weui-media-box__title">{{list.title}}</h4>
+      <view class="weui-media-box__desc">{{list.category[0].name}} 阅读量:{{list.views}}</view>
+      </view>
+      <view class="quality" bindtap="addStar" data-id="{{list._id}}">点赞:{{list.stars}} 收藏：{{list.favorites}}</view>
+    </navigator>
+  </view>
+</block>

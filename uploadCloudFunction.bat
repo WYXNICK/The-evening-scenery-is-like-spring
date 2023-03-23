@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-3g9yux0wa2b2e8c4 --n quickstartFunctions --r --project "C:\Users\wyx20\Desktop\晚景如春" --report_first --report

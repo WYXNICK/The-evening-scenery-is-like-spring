@@ -1,0 +1,90 @@
+/* pages/content/content.wxss */
+/* .title{
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+.author{
+  font-family:fantasy;
+  font-size: larger;
+}
+
+.article{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:34rpx;
+} */
+
+.bg{
+  position:fixed;
+  top:0;
+  left:0;
+  background:url('https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/1678634799978.jpeg?sign=6794ce9aa9049169e54822c5257361f3&t=1678635292')
+  no-repeat #000;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+bg-img{
+  width:100%;
+  height:100%;
+}
+/* 帖子详情页面样式 */
+.post-detail {
+  padding: 20rpx;
+}
+
+/* 帖子信息样式 */
+.post-header {
+  margin-bottom: 20rpx;
+}
+
+.post-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10rpx;
+}
+
+.post-meta {
+  font-size: 24rpx;
+  color: #999;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-meta text {
+  margin-right: 20rpx;
+}
+
+/* 帖子内容样式 */
+.post-content {
+  margin-bottom: 20rpx;
+}
+
+/* 评论区样式 */
+.comments {
+  margin-top: 20rpx;
+}
+
+.comments-header {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.comment-item {
+  margin-bottom: 10rpx;
+}
+
+.comment-author {
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+
+.comment-time {
+  color: #999;
+  margin-right: 10rpx;
+}

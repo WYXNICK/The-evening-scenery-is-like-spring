@@ -1,0 +1,169 @@
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.avatar-wrapper{
+  margin: 10px 0;
+}
+
+.nick-name-input{
+  border: 1px solid #f1f1f1;
+  padding:5px;
+}
+
+
+
+.bg{
+  position:fixed;
+  top:0;
+  left:0;
+  background:url('https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/1678527914801.jpeg?sign=4076b6e16853b0176392b31cf9449aab&t=1678527990')
+  no-repeat #000;
+  background-size: cover;
+  width:100%;
+  height:100%;
+  z-index:-1;
+   animation-name: fade-in;
+  animation-duration: 1.4s;
+}
+
+bg-img{
+  width:100%;
+  height:100%;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+} 
+.item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+/* 背景图
+/* 背景 */
+/* .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url('https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/1678527914801.jpeg?sign=4076b6e16853b0176392b31cf9449aab&t=1678527990') no-repeat #000;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation-name: fade-in;
+  animation-duration: 1.4s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* 用户信息 */
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+  color: #fff;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.avatar-wrapper {
+  margin-top: 20rpx;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  border-radius: 10rpx;
+  padding: 8rpx 15rpx;
+  font-size: 28rpx;
+}
+
+.nick-name-input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 10rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  width: 80%;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.label {
+  font-size: 28rpx;
+  color: rgb(7, 4, 4);
+}
+
+.input,
+.picker {
+  width: 500rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.other-input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 10rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: rgb(12, 19, 5);
+}
+
+.checkbox-label checkbox {
+  margin-right: 10rpx;
+} */ 

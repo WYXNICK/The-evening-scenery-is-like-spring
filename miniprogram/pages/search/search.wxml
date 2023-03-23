@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+<view class="bg" style="opacity: {{0.8}}">
+  <image class="bg-image" mode="scaleToFill" ></image>
+</view>
+<h1 class="title">{{searchData.title}}</h1>
+<view class="author">{{searchData.author}}</view>
+<rich-text class="article" nodes="{{searchData.content}}"></rich-text>
+<button class="tapbtn1" plain="true" data-id="{{searchData._id}}">收藏：{{searchData.favorites}}</button>

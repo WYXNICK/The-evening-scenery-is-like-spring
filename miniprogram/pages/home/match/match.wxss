@@ -1,0 +1,44 @@
+/* pages/home/match/match.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.button {
+  display: block;
+  margin: 30rpx auto;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #2d8cf0;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 5rpx 10rpx rgba(45, 140, 240, 0.5);
+}
+
+.user-list {
+  height: calc(100vh - 200rpx);
+  margin-top: 30rpx;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 5rpx 10rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 20rpx;
+}
+
+.user-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.user-nickname {
+  font-size: 32rpx;
+}

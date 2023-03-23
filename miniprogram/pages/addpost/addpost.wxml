@@ -1,0 +1,56 @@
+<!--pages/addpost/addpost.wxml-->
+<text >\n</text>
+<!-- <view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">可以自动聚焦的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="title" class="weui-input"  placeholder="将会获取焦点"/>
+      </view>
+    </view>
+  </view>
+</view> -->
+<form bindsubmit="formSubmit" id='1' bindreset="formReset">    
+<!-- <input name="title" type="textarea"  title="主题" autofocus placeholder="想个好标题吧！" /> -->
+   <view class="weui-cells__title">标题</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="title" class="weui-input" autofocus placeholder="请在此输入标题"/>
+      </view>
+    </view>
+    <!-- <input name="content" type="textarea"  title="内容" placeholder="~创意的寻求者也是创意的生产者~" /> -->
+    <view class="weui-cells__title">内容</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="content" class="weui-input" autofocus placeholder="请在此输入您要发布的内容"/>
+      </view>
+    </view>
+   <!-- <panel title="group-水果">
+    <radio-group current="{{current}}" bindchange="handleCollectChange">
+        <radio wx:for="{{collect}}"  wx:key="{{item.id}}" value="{{item.name}}">
+        </radio>
+    </radio-group>
+</panel> -->
+<text >\n</text>
+   <picker name="collect" mode="selector" bindchange="collectChange" range="{{collect}}" value="{{current}}">
+     <view class="picker">
+       类型选择:{{collect[current]}}</view></picker>
+       <text >\n</text>
+       <view class="weui-cells__title">上传图片</view>
+      <view class="big-logos">
+        <view class='big-logos_img'>
+           <image bindtap="upimg" src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F35%2F29%2F39573bdc74cc8e3.jpg&refer=http%3A%2F%2Fbpic.588ku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1616460543&t=62d13e4016eb219e02531abe0dd7b383' name="files"></image> 
+      
+        </view>
+        <block wx:for="{{img_arr}}" wx:key="{{index}}"> 
+            <view class='logoinfo'>    
+              <image src='{{img}}'></image>    
+            </view>  
+        </block>    
+      </view>    
+    <text >\n</text>
+
+  <text >\n</text>
+      <button class='btn' form-type="submit" bindtap="updateinfor">发布</button>    
+</form>  
+

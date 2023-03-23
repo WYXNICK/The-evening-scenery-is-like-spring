@@ -1,0 +1,94 @@
+<!--pages/personal/my/my.wxml-->
+<view class="container">
+  <form bindsubmit="submitForm">
+    <view class="form-item">
+      <view class="form-label">
+        <text>性别：</text>
+      </view>
+      <view class="form-input">
+        <radio-group bindchange="onGenderChange">
+          <label class="radio-label">
+            <radio value="男"></radio>
+            <text>男</text>
+          </label>
+          <label class="radio-label">
+            <radio value="女"></radio>
+            <text>女</text>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="form-label">
+        <text>年龄：</text>
+      </view>
+      <view class="form-input">
+        <input type="number" name="age" placeholder="请输入您的年龄" bindinput="onAgeInput" />
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="form-label">
+        <text>居住地：</text>
+      </view>
+      <view class="form-input">
+        <picker mode="region" bindchange="onRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker-text">请选择{{region[0]}} {{region[1]}} {{region[2]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="form-label">
+        <text>兴趣爱好：</text>
+      </view>
+      <view class="form-input">
+        <checkbox-group bindchange="onHobbiesChange">
+          <label class="checkbox-label">
+            <checkbox value="花草"></checkbox>
+            <text>花草</text>
+          </label>
+          <label class="checkbox-label">
+            <checkbox value="棋牌"></checkbox>
+            <text>棋牌</text>
+          </label>
+          <label class="checkbox-label">
+            <checkbox value="戏曲"></checkbox>
+            <text>戏曲</text>
+          </label>
+          <label class="checkbox-label">
+            <checkbox value="读书"></checkbox>
+            <text>读书</text>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="form-label">
+        <text>健康状况：</text>
+      </view>
+      <view class="form-input">
+        <radio-group bindchange="onHealthChange">
+          <label class="radio-label">
+            <radio value="健康"></radio>
+            <text>健康</text>
+          </label>
+          <label class="radio-label">
+            <radio value="患有糖尿病"></radio>
+            <text>患有糖尿病</text>
+          </label>
+          <label class="radio-label">
+            <radio value="患有心脏病"></radio>
+            <text>患有心脏病</text>
+          </label>
+          <label class="radio-label">
+            <radio value="患有高血压"></radio>
+            <text>患有高血压</text>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="form-item">
+      <button formType="submit" class="submit-button">提交</button>
+    </view>
+  </form>
+</view>
+
