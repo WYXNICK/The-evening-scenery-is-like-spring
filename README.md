@@ -19,7 +19,7 @@
 
 每个页面又细分为多个功能页面，具体页面架构如下图。
 
-<img src="C:\Users\wyx20\Desktop\运用代码块_副本.png" alt="运用代码块_副本" style="zoom: 50%;" />
+![页面组成](https://github.com/WYXNICK/The-evening-scenery-is-like-spring/blob/main/%E6%96%87%E6%A1%A3%E5%9B%BE%E7%89%87/%E8%BF%90%E7%94%A8%E4%BB%A3%E7%A0%81%E5%9D%97_%E5%89%AF%E6%9C%AC%20(1).png)
 
 ## 功能模块
 
@@ -29,7 +29,13 @@
 
 小程序基本页面展示：
 
-<img src="C:\Users\wyx20\Desktop\b27e222e75c95692582b1624e3bdded.jpg" alt="b27e222e75c95692582b1624e3bdded" style="zoom:25%;" /><img src="C:\Users\wyx20\Desktop\e847dcdcbc6e3070d47f6fcb68c9645.jpg" alt="e847dcdcbc6e3070d47f6fcb68c9645" style="zoom:25%;" /><img src="C:\Users\wyx20\Desktop\1f3db2eae711c0551e02d184057992d.jpg" alt="1f3db2eae711c0551e02d184057992d" style="zoom: 25%;"         /><img src="C:\Users\wyx20\Desktop\927c64820b59a184b48ad61a5ef4efc.jpg" alt="927c64820b59a184b48ad61a5ef4efc" style="zoom:25%;" />
+![主页](https://github.com/WYXNICK/The-evening-scenery-is-like-spring/blob/main/%E6%96%87%E6%A1%A3%E5%9B%BE%E7%89%87/1f3db2eae711c0551e02d184057992d.jpg)
+
+![论坛](https://github.com/WYXNICK/The-evening-scenery-is-like-spring/blob/main/%E6%96%87%E6%A1%A3%E5%9B%BE%E7%89%87/927c64820b59a184b48ad61a5ef4efc.jpg)
+
+![兴趣空间](https://github.com/WYXNICK/The-evening-scenery-is-like-spring/blob/main/%E6%96%87%E6%A1%A3%E5%9B%BE%E7%89%87/b27e222e75c95692582b1624e3bdded.jpg)
+
+![个人信息](https://github.com/WYXNICK/The-evening-scenery-is-like-spring/blob/main/%E6%96%87%E6%A1%A3%E5%9B%BE%E7%89%87/e847dcdcbc6e3070d47f6fcb68c9645.jpg)
 
 ## 项目优势
 
