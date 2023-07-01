@@ -103,7 +103,7 @@ Page({
   modalTap(){
     wx.showModal({
       title: '紧急求助确认',
-      content: '您是否确定发布紧急求助？我们将为您拨打急救电话，联系工作人员立即上门救助，并将您的求助信息发布在平台。',
+      content: '您是否确定发布紧急求助？我们将为您拨打急救电话，联系工作人员立即上门救助，并将您的求助信息发向附近的人和平台。',
       showCancel:true,
       confirmText: '确定',
       complete: (res) => {

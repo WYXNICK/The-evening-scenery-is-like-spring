@@ -1,12 +1,13 @@
 <!-- pages/list/list.wxml -->
+<view class="all">
 <view class="content">
   <view class="bg">
-    <view class="name">论坛</view>
+    <text class="name">集市互助</text>
     <form  bindsubmit="formSubmit">
     <view class="search">     
-         <input type="text" name="find" placeholder="帖子名称" form-type="submit"/>
-         <button class='find' form-type="submit" style="width:50px;height:30x">查询</button>     
-         <button class='btn' bindtap="addpost" style="width:80px;height:30x">发帖</button> 
+         <input type="text" name="find" placeholder="互助信息" form-type="submit"/>
+         <button class='find' form-type="submit" style="width:80px;height:30x">查询</button>     
+         <button class='btn' bindtap="addpost" style="width:80px;height:30x">发布</button> 
     </view>
   </form>  
   </view>
@@ -27,3 +28,4 @@
     </navigator>
   </view>
 </block>
+</view>

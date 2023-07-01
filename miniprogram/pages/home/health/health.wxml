@@ -1,0 +1,13 @@
+<!--pages/home/health/health.wxml-->
+<!-- pages/health-news/health-news.wxml -->
+<view class="page__bd">
+  <view class="news-list">
+    <view class="news-item" wx:for="{{articles}}" wx:key="*this">
+      <image class="news-item__image" src="{{item.image}}" mode="aspectFill"></image>
+      <view class="news-item__title">{{item.title}}</view>
+      <view class="news-item__date">{{item.date}}</view>
+      <view class="news-item__summary">{{item.summary}}</view>
+    </view>
+  </view>
+</view>
+

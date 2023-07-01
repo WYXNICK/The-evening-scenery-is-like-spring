@@ -1,1 +1,43 @@
 /* pages/home/request/request.wxss */
+/* pages/home/request/request.wxss */
+/* pages/home/request/request.wxss */
+.page__bd {
+  padding: 10px;
+  background: linear-gradient(to bottom, #00BFFF, #ffffff);
+  height:100vh
+}
+
+
+.weui-panel__hd {
+  background: linear-gradient(to right, #dde6eb, #5cd1e0);
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.weui-panel__title {
+  margin: 0;
+}
+
+.weui-media-box {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.weui-media-box__thumb {
+  width: 80px;
+  height: 80px;
+}
+
+.weui-media-box__bd {
+  margin-left: 10px;
+}
+
+.weui-media-box__title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}

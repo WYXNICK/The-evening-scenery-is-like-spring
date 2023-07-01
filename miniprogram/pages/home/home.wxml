@@ -1,22 +1,7 @@
-<!--pages/home/home.wxml-->
-<!-- <text>pages/home/home.wxml</text> -->
-<!-- <view id="imgsection">
-  <view class="imglist">
-    <image class="imgitem" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/home-main.png?sign=a4f6e8c356cdbecf991bfb7ca5e2e560&t=1678147328"></image>
-  </view>
-</view>
-<view class="flex-box">
-    <image class="img-btn" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/29%E6%B1%82%E6%95%91%E4%BA%BA%E5%91%98.png?sign=e39648b6cc62deea718099e449b1f079&t=1678244478"></image>
-    <image class="img-btn" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E7%94%B5%E5%95%86%E6%8F%92%E7%94%BB.png?sign=eadcaa874a59b23556592551d06ae22a&t=1678263686"></image>
-</view>
-<view class="flex-box">
-<button style="width:300rpx" plain="true" type="primary" bindtap="modalTap">紧急求助</button>
-<button style="width:300rpx" plain="true" type="primary" bindtap="gotoShop">商城</button>
-</view>
-<button class="btn" open-type="contact">联系客服</button> -->
-<!--首页-->
+<!-- pages/home/home.wxml -->
 
-<view class="bg">
+
+<!-- <view class="bg">
   <image class="bg-image" mode="scaleToFill" ></image>
 </view>
 <view class="container">
@@ -60,4 +45,43 @@
     </swiper>
   </view>
 </view>
-<button class="btn-bottom" open-type="contact">联系客服</button>
+<button class="btn-bottom" open-type="contact">联系客服</button> -->
+
+<view class="bg">
+  <icon class="home-icon"></icon>
+  <text class="welcome">欢迎您！王大爷！</text>
+  <image class="showImg"></image>
+  <view class="service-group">
+    <navigator url="/pages/home/bridge/bridge">
+      <view class="service-button">
+        <image class="serviceImg" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E7%A4%BE%E5%8C%BA%E6%9C%8D%E5%8A%A1.png?sign=81345db6ed5c4acd3c0a448eb3595961&t=1686280852"></image>
+        <text class="serviceText">社区服务</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/home/bridge/bridge">
+      <view class="service-button">
+        <image class="serviceImg" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%AD%90%E5%A5%B3%E6%A1%A5%E6%A2%81.png?sign=b77f39099d934d8f251fd5918a4fc79c&t=1686286954"></image>
+        <text class="serviceText">子女桥梁</text>
+      </view>
+    </navigator>
+  </view>
+  <text class="areaText">主题专区</text>
+  <view class="subject-group">
+    <navigator url="/pages/home/shop/shop" class="subject-button">
+      <image class="subjectImg" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%95%86%E5%9F%8E.png?sign=178c35e090de3ce69af1bc82a2e3b295&t=1686293486"> </image>
+      <text class="subjectText">老年商城</text>
+    </navigator>
+    <navigator url="/pages/home/request/request" class="subject-button">
+      <image class="subjectImg" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5.png?sign=8c2d1288bc12fc4f4ade9edbd9e53040&t=1686309117"> </image>
+      <text class="subjectText">知乎日报</text>
+    </navigator>
+    <navigator url="/pages/home/health/health" class="subject-button">
+      <image class="subjectImg" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%8C%BB%E7%96%97%E5%92%A8%E8%AE%AF.png?sign=ded560ff9763c8e17aa8d4fdf037ccfc&t=1686310303"> </image>
+      <text class="subjectText">医疗咨讯</text>
+    </navigator>
+  </view>
+  <button class="emergency-button" bindtap="modalTap">
+      <image src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/29%E6%B1%82%E6%95%91%E4%BA%BA%E5%91%98.png?sign=e39648b6cc62deea718099e449b1f079&t=1678244478" mode="aspectFit" class="emergency-icon"></image>
+      <text class="emergency-text">紧急求助</text>
+    </button>
+</view>

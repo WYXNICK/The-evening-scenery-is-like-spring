@@ -1,42 +1,28 @@
-/* pages/home/request/story/sotry.wxss */
-/* Set the font and background color for the entire page */
-page {
-  background-color: #f8f8f8;
-  font-family: Arial, sans-serif;
+/* pages/home/request/story/story.wxss */
+.page__bd {
+  padding: 10px;
+  background: linear-gradient(to bottom, #00BFFF, #ffffff);
+  height:100vh
 }
 
-/* Style the main article section */
-.weui-article__section {
-  padding: 20rpx;
-}
-
-/* Style the article title */
 .weui-article__h1 {
-  font-size: 36rpx;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20rpx;
+  margin-bottom: 10px;
 }
 
-/* Style the article image */
-.weui-artcile__img {
-  display: block;
-  margin: 20rpx auto;
+.weui-article__img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
 }
 
-/* Style the article text */
-.weui-article__p {
-  font-size: 28rpx;
+.weui-article__content {
   line-height: 1.5;
-  margin-bottom: 20rpx;
+  font-size: 16px;
 }
 
-/* Style the hyperlink to the original article */
-.weui-article__p a {
-  color: #576b95;
-  text-decoration: none;
-}
-
-/* Style the hyperlink on hover */
-.weui-article__p a:hover {
-  text-decoration: underline;
+.weui-article__p {
+  margin-top: 10px;
+  color: #999;
 }

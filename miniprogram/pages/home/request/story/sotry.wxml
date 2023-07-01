@@ -1,15 +1,14 @@
-<!--pages/home/request/story/sotry.wxml-->
+<!-- pages/home/request/story/story.wxml -->
 <view class="page__bd">
   <view class="weui-article">
     <view class="weui-article__h1">{{title}}</view>
     <view class="weui-article__section">
       <view class="weui-article__section">
         <view class="weui-article__p">
-          <iamge class="weui-artcile__img" src="{{image}}" mode="widthFix" style="width:100%" />
+          <image class="weui-article__img" src="{{image}}" mode="aspectFill" style="width: 100%; height: 200px; border-radius: 5px;" />
         </view>
-        <rich-text nodes="{{body}}"></rich-text>
-        <view class="weui-article__p">
-          知乎链接:{{share_url}}</view>
+        <rich-text nodes="{{body}}" class="weui-article__content"></rich-text>
+        <view class="weui-article__p">知乎链接: {{share_url}}</view>
       </view>
     </view>
   </view>

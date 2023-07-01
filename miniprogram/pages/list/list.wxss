@@ -1,60 +1,127 @@
 /* pages/list/list.wxss */
-.weui-panel__bd{
-  border-width: 3px;
-  border-color:mistyrose;
-  border-style: solid;
-  border-radius: 25rpx;
+.all{
+  background: linear-gradient(180deg, #92D2F6 0%, rgba(217, 217, 217, 0) 100%);
+  height:100vh;
 }
 
-.bg{
-  background-color:#87CEFA;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
+.bg {
+  background: linear-gradient(180deg, #92D2F6 0%, rgba(217, 217, 217, 0) 100%);
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 20rpx;
 }
-.name{
-  width: 30%;
-  text-align: center;
-  color: #ffffff;
+
+.name {
+  font-size: 40rpx; /* 放大字体大小 */
   font-weight: bold;
-  font-size: 40rpx;
-  padding-right: 15rpx;
-  padding-left: 15rpx;
-  position: relative;
-  top: 20rpx;
-}
-.search{
-  width:70%;
-  display: flex;
-  flex-direction: row;
-  border:1px solid #cccccc;
-  height: 25px;
-  margin-right:10px;
-  background-color: #F6F5F3;
-  border-radius: 5px;
-  align-items: center; 
-  position: relative;
-  top: 20rpx;
+  color: #333;
+  top:20rpx;
+  background-image: linear-gradient(to right, #007AFF, #FF4081); /* 添加渐变背景 */
+  -webkit-background-clip: text; /* 文字裁剪为背景的形状 */
+  -webkit-text-fill-color: transparent; /* 文字填充为透明，显示背景渐变 */
 }
 
-.btn{
-  margin-left: 350rpx;
-  position: relative;
-  left: 150rpx; 
+
+.search {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.search input {
+  flex: 1;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  border: 1rpx solid #999;
   font-size: 26rpx;
-  color:#ffffff;
-  background-color: #46c1f1;
+  color: #333;
+  background-color: #F5F5F5;
 }
 
-.find{
-  width: 50px;
-  height: 25px;
-  position: relative;
-  left: 110rpx; 
-  border: 0 solid #ffffff;
-  font-size: 22rpx;
-  padding: 0px;
-  top:0rpx;
+.find,
+.btn {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 5px;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  border-radius: 30rpx;
+}
+
+.find {
+  background-color: #4d9df3;
+  margin-left: 40rpx;
+  /* padding-left: 5rpx; */
+  left:0;
+}
+
+.btn {
+  background-color: #1AAD19;
+  margin-left: 40rpx;
+}
+
+.weui-panel__bd {
+  margin-bottom: 20rpx;
+}
+
+.weui-media-box__hd {
+  margin-right: 20rpx;
+}
+
+.weui-media-box__thumb {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 6rpx;
+}
+
+.weui-media-box__bd {
+  flex: 1;
+}
+
+.weui-media-box__title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.weui-media-box__desc {
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+}
+
+.quality {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.quality:before {
+  content: '👍';
+  margin-right: 5rpx;
+  color: #007AFF;
+}
+
+.quality:after {
+  content: '❤️';
+  margin-left: 20rpx;
+  color: #FF4081;
+}
+
+/* 边框效果 */
+.weui-media-box_appmsg {
+  border: 1rpx solid #999;
+  border-radius: 6rpx;
+  padding: 10rpx;
 }

@@ -1,0 +1,48 @@
+<!--pages/home/bridge/bridge.wxml-->
+
+
+<view class="bg">
+  <image class="bridge-icon" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E5%AD%90%E5%A5%B3%E6%A1%A5%E6%A2%81.png?sign=7ee35a6d365025b98c5a3ac6bda28d24&t=1686317556"></image>
+  <text class="bridge-text">子女桥梁</text>
+  <view class="tab-header">
+    <view class="watch{{currentTab === 'tab1' ? 'active' : ''}}" data-tab="tab1" bindtap="switchTab">监控查询</view>
+    <view class="community{{currentTab === 'tab2' ? 'active' : ''}}" data-tab="tab2" bindtap="switchTab">社区助老</view>
+  </view>
+  <view class="panel">
+    <view class="realtime-icon" wx:if="{{currentTab === 'tab1'}}"></view>
+    <view class="realtime-text" wx:if="{{currentTab === 'tab1'}}">实时监控</view>
+    <text class="mainpage-text" wx:if="{{currentTab === 'tab1'}}">主画面</text>
+    <text class="location-text" wx:if="{{currentTab === 'tab1'}}">—— 庭院</text>
+    <video id="myVideo" src="https://636c-cloud1-3g9yux0wa2b2e8c4-1317079251.tcb.qcloud.la/%E7%9B%91%E6%8E%A7.mp4?sign=d4fc05495f497e722aeccd4c2a25e27a&t=1686316710" autoplay muted object-fit="cover" bind:loadedmetadata="onVideoLoaded" wx:if="{{currentTab === 'tab1'}}"></video>
+    <text class="inform" wx:if="{{currentTab === 'tab2'}}">相关通知</text>
+    <view class="inform-content" wx:if="{{currentTab === 'tab2'}}">
+      <view class="inform-text">注意！仪城村村口路段将封闭维修！
+      </view>
+      <view class="inform-text">记得提醒家中老人去做这件事！
+      </view>
+    </view>
+    <view class="inform-button1" wx:if="{{currentTab === 'tab2'}}"></view>
+    <view class="inform-button2" wx:if="{{currentTab === 'tab2'}}"></view>
+    <text class="more" wx:if="{{currentTab === 'tab2'}}">更多</text>
+    <text class="gotoHouse" wx:if="{{currentTab === 'tab2'}}">上门服务</text>
+    <view class="repair" wx:if="{{currentTab === 'tab2'}}">
+      <image class="repair-icon"></image>
+      <text class="repair-text">上门维修</text>
+    </view>
+    <view class="send" wx:if="{{currentTab === 'tab2'}}">
+      <image class="send-icon"></image>
+      <text class="send-text">取送物品</text>
+    </view>
+    <view class="work" wx:if="{{currentTab === 'tab2'}}">
+      <image class="work-icon"></image>
+      <text class="work-text">事务办理</text>
+    </view>
+  </view>
+ <!-- 其他画面部分 -->
+ <text class="other-text" wx:if="{{currentTab === 'tab1'}}">其他画面</text>
+  <swiper class="other-img" wx:if="{{currentTab === 'tab1'}}" indicator-dots="{{false}}" indicator-dots="{{true}}">
+    <swiper-item wx:for="{{images}}" wx:key="*this">
+      <image class="swiper-item__image" src="{{item}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+</view>

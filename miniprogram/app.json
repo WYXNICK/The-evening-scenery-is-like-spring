@@ -16,7 +16,9 @@
     "pages/home/request/request",
     "pages/home/request/story/sotry",
     "pages/home/match/match",
-    "pages/chat/chat"
+    "pages/chat/chat",
+    "pages/home/bridge/bridge",
+    "pages/home/health/health"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -41,7 +43,7 @@
         "pagePath": "pages/list/list",
         "iconPath": "images/list.png",
         "selectedIconPath": "images/list-active.png",
-        "text": "信息"
+        "text": "集市"
       },
       {
         "pagePath": "pages/partner/partner",
@@ -53,7 +55,7 @@
         "pagePath": "pages/personal/personal",
         "iconPath": "images/personal.png",
         "selectedIconPath": "images/personal-active.png",
-        "text": "我的"
+        "text": "个人"
       }
     ]
   },
